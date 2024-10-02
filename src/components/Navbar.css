@@ -1,0 +1,166 @@
+/* .navbar {
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+    height: 100vh;
+  }
+  
+  .navbar.scrolled {
+    background-color: black;
+  }
+  
+  .container {
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left img {
+    height: 25px;
+    margin-right: 40px;
+  }
+  
+  .left span {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right .icon {
+    margin: 0px 15px;
+    cursor: pointer;
+  }
+  
+  .right img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .right .profile {
+    position: relative;
+  }
+  
+  .right .profile .options {
+    display: none; 
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    padding: 10px;
+  }
+  
+  .right .profile .options span {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .right .profile:hover .options {
+    display: flex;
+    flex-direction: column;
+  } */
+
+
+ a{
+    color:white;
+    cursor: pointer;
+    text-decoration: none;
+
+ } 
+ a:hover{
+   opacity: 0.8;
+   transition: 0.1s all ease-in-out;
+   color: #ddd;
+   background-color: transparent;
+ }
+  .mainheaderContainer{
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  .content{
+    display: flex;
+    margin-top: 19px;
+ 
+    align-items: center;
+    justify-content: space-between; 
+       
+  }
+  .section{
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .headerlinks{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .rightcontent{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-right: 49px;
+  }
+  .rightlogo{
+    border-radius: 3px;
+  }
+  /* styles.css */
+.account-container {
+    position: absolute;
+    padding: 20px;
+    width: 200px;
+    border: 1px solid #ddd;
+  }
+  
+  .account-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rightlogo {
+    margin-right: 8px;
+  }
+  
+  .arrow-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow-button.rotated {
+    transform: rotate(180deg);
+  }
+  .rigthusercontent{
+    position: absolute;
+    color: #F7F7F7;
+  }
+  
+  .dropdowniocn{
+    margin-top: 6px;
+    margin-left: -5px;
+  }
