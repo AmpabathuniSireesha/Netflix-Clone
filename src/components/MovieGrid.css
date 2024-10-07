@@ -1,9 +1,18 @@
+/* Prevent horizontal scrolling */
+body, html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .movie-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three movies per row */
-  gap: 20px;
-  padding: 20px;
-  width: 100%;
+  grid-template-columns: repeat(5, 1fr); /* Changed to 1fr to make it responsive */
+  gap: 10px; /* Decreased gap size from 20px to 10px */
+  padding: 10px; /* Decreased padding size from 20px to 10px */
+  margin: 0;
+  max-width: 100%;
 }
 
 .movie-card {
@@ -14,7 +23,7 @@
 }
 
 .movie-card:hover {
-  transform: scale(1.15); /* Zoom-in effect on hover */
+  transform: scale(1.25); /* Zoom-in effect on hover */
 }
 
 .movie-image {
@@ -54,12 +63,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  gap: 10px;
   width:100%;
+  flex-wrap: wrap; /* Added to wrap options on smaller screens */
 }
 
 .icon-container {
   text-align: center; 
   color: white; 
+  flex-basis: 20%; /* Added to make each option take up equal space */
 }
 
 .icon {
@@ -73,4 +85,17 @@
   text-align: center;
   font-size: 0.9rem;
   margin-top: 10px;
+}
+
+/* Added media query to adjust grid columns on smaller screens */
+@media only screen and (max-width: 768px) {
+  .movie-grid {
+    grid-template-columns: repeat(3, 1fr); /* Changed to 3 columns on smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr); /* Changed to 2 columns on even smaller screens */
+  }
 }

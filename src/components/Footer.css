@@ -1,107 +1,91 @@
-/* *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing:antialiased;
-    color: #999;
-}
-ul{
-    list-style: none;
-}
-a{
-    color: #fff;
-    text-decoration: none;
-}
-footer{
-    max-width: 70%;
-    margin: 1rem auto;
-    overflow: auto;
-}
-footer p{
-    margin-bottom: 1.5rem;
-}
-footer li{
-    line-height: 1.9;
-}
-a:hover{
-    color: #fff !important;
-} */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
+body,html{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin: 0 0 14px;
     padding: 0;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    color: #999;
-    background-color: #000; /* Optional: Add a background color for better contrast */
+
+.site-footer .footer-links {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin: 0 0 14px;
+    margin-left: 40px;
+    padding: 0;
 }
 
-ul {
-    list-style: none;
+.site-footer .footer-links ul {
+    list-style: none; /* Ensure no bullets are displayed */
+    padding: 0; /* Remove default padding from list */
+    margin-right:20px; /* Remove default margin from list */
+    flex-direction:column; /* Add this to display vertically */
+    height: 100px; /* Add this to make the ul take full height */
 }
 
-a {
-    color: #fff;
+.site-footer .footer-links li {
+    margin-bottom: 20px; /* Add some margin between list items */
+}
+
+.site-footer .footer-links a {
+    margin-right: 20px;
+    color: #768080;
     text-decoration: none;
 }
 
-footer {
-    max-width: 80%; /* Increased width for larger screens */
-    margin: 2rem auto; /* Added more space around footer */
-    padding: 20px; /* Added padding for better spacing */
-    background-color: rgba(255, 255, 255, 0.1); /* Optional: Semi-transparent background */
-    border-radius: 8px; /* Optional: Rounded corners */
+.site-footer .footer-links a:hover {
+    text-decoration: underline;
+    color: #768080;
 }
 
-footer p {
+.site-footer .service-code {
+    margin-left: 40px;
     margin-bottom: 1.5rem;
-    line-height: 1.6; /* Improved line height for readability */
 }
 
-footer li {
-    line-height: 1.9; /* Consistent line height */
+.site-footer .service-code button {
+    background-color: transparent;
+    border: 1px solid #768080;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #768080;
+    font-size:13px;
+    text-decoration: none; 
+    
 }
 
-/* Add some hover effects for better interaction */
-a:hover {
-    color: #e50914 !important; /* Changed hover color for visibility */
+.site-footer .service-code button:hover {
+    color: white; /* Change text color to white on hover */
+    
+}
+
+.site-footer .service-code button:hover a {
+    text-decoration: none; /* Ensure no underline on hover for button text */
+}
+
+.site-footer p {
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: x-small;
+    color: #768080;
 }
 
 /* Media Queries for responsiveness */
-@media (max-width: 1200px) {
-    footer {
-        max-width: 90%; /* Adjust max-width for smaller screens */
-    }
-}
-
 @media (max-width: 768px) {
-    footer {
-        max-width: 95%; /* Further adjustment for mobile views */
-        padding: 15px; /* Less padding on smaller screens */
-    }
-
-    footer p {
-        font-size: 14px; /* Slightly smaller font size */
-    }
-
-    footer li {
-        font-size: 16px; /* Ensure list items are easily readable */
+    .site-footer .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 }
-
-@media (max-width: 480px) {
-    footer p {
-        font-size: 12px; /* Even smaller font size for mobile */
-    }
-
-    footer li {
-        font-size: 14px; /* Smaller font size for mobile */
-    }
+.site-footer .social-media{
+    margin-left: 40px;
+    display: flex;
+   gap: 30px;
 }
